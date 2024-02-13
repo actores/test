@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('descripcion');
-            $table->boolean('estado')->default(false);
+            $table->string('estado')->default('Pendiente');
             $table->timestamps();
         });
     }
